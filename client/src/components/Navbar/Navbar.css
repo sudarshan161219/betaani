@@ -1,0 +1,148 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  /* width: 100%; */
+}
+
+.l-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nameandlogo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.nameandlogo h1 {
+  color: white;
+  transition: all 0.5s ease;
+  font-size: 2.5rem;
+}
+
+.nameandlogo h1 span {
+  color: #7c15ff;
+  transition: all 0.5s ease;
+}
+
+.nameandlogo h1:hover {
+  color: #7c15ff;
+}
+.nameandlogo h1:hover span {
+  color: white;
+}
+
+/* .nameandlogo > img {
+    height: 65px;
+    width: 70px;
+} */
+
+.l-section > input {
+  height: 30px;
+  width: 200px;
+  border-radius: 10px;
+  border: 1px solid #a9a9a9;
+  background-color: transparent;
+  color: white;
+  font-size: 1.1rem;
+  padding: 0.3rem;
+  font-family: initial;
+  letter-spacing: 1px;
+}
+a {
+  text-decoration: none;
+}
+::placeholder {
+  font-size: 0.9rem;
+  padding-left: 15px;
+}
+
+.nav-left {
+  display: flex;
+  gap: 45px;
+}
+
+.nav-left > * > * {
+  text-decoration: none;
+  color: #a9a9a9;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  /* padding: 10px; */
+}
+
+.nav-left > * {
+  list-style: none;
+}
+
+.r-section {
+  display: none;
+}
+
+.nav-left > * > *:hover {
+  color: white;
+  font-size: 1.105;
+  background-color: rgba(0, 0, 0, 0.226);
+  border-radius: 20%;
+}
+
+.dec-logo {
+  height: 20px;
+  display: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.mob-logo {
+  height: 45px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.nav-icon {
+  font-size: 1.4rem;
+  color: white;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+}
+
+@media (min-width: 700px) {
+  .dec-logo {
+    display: flex;
+    height: 25px;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .mob-logo {
+    display: none;
+    height: 45px;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .l-section > input {
+    width: 300px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .nav-icon {
+    display: none;
+  }
+
+  .r-section {
+    display: block;
+  }
+}
+
+
+@media (min-width: 1300px) {
+.navbar{
+  padding: 1.5rem  1.2rem;
+}
+.dec-logo {
+  display: flex;
+  height: 45px;
+  -webkit-tap-highlight-color: transparent;
+}
+}

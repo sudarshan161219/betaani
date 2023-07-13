@@ -1,0 +1,48 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* .main {
+    height: 140vh;
+    width: 100%;
+    background: linear-gradient(225deg, #00ff00, #000000, #1b1b1b, #a40fff);
+    background-size: 240% 240%;
+    animation: gradient-animation 24s ease infinite;
+} */
+#navbars,
+#cards,
+#landingpages,
+#buttons,
+#textanimations {
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media (min-width: 700px) {
+  #navbars , #cards,  #landingpages, #buttons, #textanimations{
+        display: flex;
+    }
+}
+
+
+@media (min-width: 1000px) {
+  #navbars , #cards,  #landingpages, #buttons, #textanimations{
+        display: flex;
+        height: 100vh;
+    }
+}

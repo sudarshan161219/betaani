@@ -1,0 +1,113 @@
+.intro {
+  display: grid;
+  height: 100vh;
+  gap: 1.3rem;
+}
+.main-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.main-heading > .heading > h1 {
+  font-size: 2.3rem;
+  color: white;
+  margin-top: 70px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 140%;
+}
+
+.main-heading > .heading > h1 > span {
+  color: #7c15ff;
+}
+
+.main-heading > a > button {
+  border: 2px solid #7c15ff;
+  height: 45px;
+  width: 178px;
+  border-radius: 10px;
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+  transition: all 0.5s ease;
+  position: relative;
+  overflow: hidden;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+.main-heading > a > button:hover {
+  transform: scale(1.1);
+  border: none;
+  color: black;
+}
+
+.main-heading > a > button::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #7c15ff;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+.main-heading > a > button:hover::before {
+  width: 250%;
+}
+.main-heading > a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+.main-heading > a > button:hover a {
+  color: black;
+}
+
+.getstarted {
+  overflow: hidden;
+  position: relative;
+  display: flex; 
+  gap: 1.5rem;
+  flex-direction: column;
+
+}
+
+.getstarted > h2 {
+  font-size: 2rem;
+  color: white;
+    padding: 0 1.5rem;
+}
+
+.getstarted > h2 > span {
+  color: #7c15ff;
+}
+
+@media (min-width: 700px) {
+  .main-heading > .heading > h1 {
+    font-size: 2.5rem;
+  }
+
+  .getstarted > h2 {
+    font-size: 2rem;
+  }
+}
+
+
+@media (min-width: 1300px) {
+  .main-heading > .heading > h1 {
+    font-size: 3.5rem;
+  }
+
+  .getstarted > h2 {
+    font-size: 3rem;
+    padding-left: 2.5rem;
+  }
+  }
+  

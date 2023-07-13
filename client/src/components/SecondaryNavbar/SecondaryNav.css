@@ -1,0 +1,33 @@
+.secondary-nav {
+    margin: 0;
+    width: 100%;
+    display: none;
+}
+
+.sec-nav-comp > ul {
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.089);
+    height: 50px;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.199);
+}
+
+.sec-nav-comp > ul > * > * {
+    color: #A9A9A9;
+    transition: all 0.4s ease;
+}
+
+.sec-nav-comp > ul > * > *:hover {
+    color: #7C15FF;
+}
+
+
+@media (min-width: 700px) {
+    .secondary-nav {
+        display: block;
+    }
+    
+  }
+  

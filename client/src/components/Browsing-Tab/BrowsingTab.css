@@ -1,0 +1,108 @@
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* .browse-page {
+    height: 320vh;
+    width: 100%;
+    background: linear-gradient(225deg, #00ff00, #000000, #1b1b1b, #a40fff);
+    background-size: 240% 240%;
+    animation: gradient-animation 24s ease infinite;
+  }
+   */
+  .services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 100px auto 100px;
+    animation: fadeIn 1s ease-in;
+  
+  }
+  
+  .services>div {
+    margin-bottom: 10px;
+  }
+  
+  .services button {
+    margin: 50px;
+    padding: 15px 50px;
+    font-size: 15px;
+    border: 2px solid #7C15FF;
+    border-radius: 20px;
+    background-color: transparent;
+    color: #fff;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .services button:hover {
+    background-color: #7C15FF;
+    /* Change to your desired background color on hover */
+  }
+  
+  .services h1 {
+    margin: 10px 0;
+    animation: fadeIn 1s ease-in;
+    color: #fff;
+  }
+  
+  .services p {
+    margin: 0;
+    animation: fadeIn 1s ease-in;
+    color: #fff;
+  
+  }
+  
+  .dropdown-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 50px;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .dropdown {
+    margin: 0 10px;
+  }
+  
+  /* .dropdown label {
+      margin-right: 5px;
+     
+    } */
+  
+  .dropdown select {
+    background: transparent;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    border: none;
+    animation: fadeIn 1s ease-in;
+    color: white;
+  }
+  
+  .search-bar {
+    margin: 50px;
+    animation: fadeIn 1s ease-in;
+    width: 700px;
+  }
+  
+  .search-bar input {
+    padding: 15px;
+    font-size: 20px;
+    border: 2px solid #7C15FF;
+    border-radius: 50px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  
+  option {
+    color: white;
+    background: black;
+  }
